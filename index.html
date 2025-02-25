@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de inicio de sesión moderna con registro">
+    <title>Modern Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container" id="container">
+        <!-- Formulario de registro -->
+        <section class="form-container sign-up">
+            <form action="#" method="post" novalidate>
+                <h1>Create Account</h1>
+                <nav class="social-icons" aria-label="Social networks">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google" aria-hidden="true"></i>
+                        <span class="sr-only">Google</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </nav>
+                <span>or use your email for registeration</span>
+                <input type="text" id="signup-name" name="name" placeholder="Name" required>
+                <input type="email" id="signin-email" name="email" placeholder="Email" required>
+                <input type="password" id="signin-password" name="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Formulario de inicio de sesión -->
+        <div class="form-container sign-in">
+            <form action="#" method="post" novalidate>
+                <h1>Sign In</h1>
+                <nav class="social-icons" aria-label="Redes Sociales">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google" aria-hidden="true"></i>
+                        <span class="sr-only">Google</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </nav>
+                <span>or use your email and password</span>
+                <input type="email" id="signin-email" name="email" placeholder="Email" required>
+                <input type="password" id="signin-password" name="password" placeholder="Contraseña" required>
+                <a href="#">Forget Your Password?</a>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        
+        <!-- Panel de alternancia -->
+        <aside class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h2>Welcome Back!</h2>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" type="button" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h2>Hello, Friend!</h2>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" type="button" id="register">Sign Up</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
